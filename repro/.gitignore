@@ -1,0 +1,7 @@
+results/
+smoke_results/
+logs/
+figures/
+__pycache__/
+smoke_shared/
+slurm_*.out

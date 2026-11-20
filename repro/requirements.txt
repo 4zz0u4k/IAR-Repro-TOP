@@ -1,0 +1,9 @@
+# Install torch FIRST from the CUDA 12.8 index (required for Blackwell GPUs, needs NVIDIA driver >= 570):
+#   pip install "torch>=2.7" --index-url https://download.pytorch.org/whl/cu128
+# then:  pip install -r requirements.txt
+#
+# Keep the SAME versions for every run (local smoke test and all cluster runs).
+# Set mujoco to the exact version installed locally (`pip show mujoco`), so both machines match.
+gymnasium[mujoco]==1.4.0
+numpy
+matplotlib
